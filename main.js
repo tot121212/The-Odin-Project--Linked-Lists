@@ -1,0 +1,28 @@
+import { LinkedList } from "./LinkedList.js";
+
+const linkedList = new LinkedList();
+linkedList.append("a");
+linkedList.prepend("b");
+console.log("Size:",linkedList.getSize());
+console.log("Head:",linkedList.getHead());
+console.log("Tail:",linkedList.getTail());
+console.log(linkedList.toString());
+console.log("Node at 4:", linkedList.at(4));
+console.log("Node at 1:", linkedList.at(1));
+linkedList.append("c");
+linkedList.append("d");
+linkedList.append("e");
+console.log("Node at 4:", linkedList.at(4));
+console.log(linkedList.toString());
+console.log("Node popped:",linkedList.pop());
+console.log(linkedList.toString());
+console.log("Contains a:",linkedList.contains("a"));
+console.log("Contains a:",linkedList.contains("e"));
+console.log("Find a:",linkedList.find("a"));
+console.log("Find e:",linkedList.find("e"));
+linkedList.insertAt("i", -1);
+linkedList.insertAt("j", 0);
+linkedList.insertAt("k", 1);
+linkedList.insertAt("l", 1);
+linkedList.insertAt("m", 7);
+console.log(linkedList.toString());
